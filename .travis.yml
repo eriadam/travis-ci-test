@@ -4,8 +4,10 @@ node_js:
   - node
 
 script:
-  - ./release-notes.sh
   - echo "lofasz"
+
+before_deploy:
+  - ./release-notes.sh
 
 deploy:
   - provider: releases
