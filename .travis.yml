@@ -4,6 +4,7 @@ node_js:
   - node
 
 script:
+  - release-notes.sh
   - echo "lofasz"
 
 deploy:
