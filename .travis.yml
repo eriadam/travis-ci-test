@@ -9,7 +9,7 @@ script:
 deploy:
   - provider: releases
     file: README.md
-    release_notes: "test release notes"
+    release_notes_file: RELEASE_NOTES.md
     prerelease: true
     overwrite: true
     cleanup: true
