@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - node
+
+deploy:
+  - provider: releases
+    file: README.md
+    release_notes: "test release notes"
+    prerelease: true
+    overwrite: true
+    cleanup: true
+    edge: true
+    on:
+      tags: true
