@@ -6,5 +6,5 @@
 notes=$(git log --pretty="* %s"  $(git describe --tags --abbrev=0 @^)..@)
 echo "${notes}"
 pwd
-ls -la
 echo "${notes}" >> ./RELEASE_NOTES.md
+ls -la
